@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Marck+Script&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/72e8ccb00a.js" crossorigin="anonymous"></script>
+    <script src="Assets/Js/script.js"></script>
     <title>Portfolio Agc</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <a id="logo" href="#">Agc</a>
             <i id="burger" class="fa-solid fa-bars"></i>
         </nav>
@@ -29,11 +30,13 @@
         </section>
         <section>
             <h2 class="title">Présentation</h2>
-            <img id="profilpicture" src="Assets/Img/1661325227976.jpg" alt="Photo de moi">
-            <div id="presentation">
-                <p class="paragraphpresentation">Je m’appel Arthur, j’ai 26 ans et je suis développeur web junior.</p>
-                <p class="paragraphpresentation">Après avoir suivi une formation et obtenu un dipôme de développeur web, web mobile, j'ai développé un éventail de compétences et accumulé une grande quantité de connaissances en participant à divers projets qui impliquaient l'utilisation de différents langages de programmation.</p>
-                <p class="paragraphpresentation">Conscient de la nécessité de continuer à progresser, je suis extrêmement déterminé à poursuivre mon apprentissage afin de me perfectionner.</p>
+            <div id="aboutme">
+                <img id="profilpicture" src="Assets/Img/1661325227976.jpg" alt="Photo de moi">
+                <div id="presentation">
+                    <p class="paragraphpresentation">Je m’appel Arthur, j’ai 26 ans et je suis développeur web junior.</p>
+                    <p class="paragraphpresentation">Après avoir suivi une formation et obtenu un dipôme de développeur web, web mobile, j'ai développé un éventail de compétences et accumulé une grande quantité de connaissances en participant à divers projets qui impliquaient l'utilisation de différents langages de programmation.</p>
+                    <p class="paragraphpresentation">Ayant pleinement conscience de l'importance cruciale de maintenir une progression constante dans le domaine du développement web, et conscient que le monde technologique évolue à un rythme effréné, je nourris une détermination inébranlable à persévérer dans mon incessant apprentissage, dans le but de perfectionner mes compétences et mes connaissances acquises.</p>
+                </div>
             </div>
         </section>
         <section id="softskill">
@@ -57,14 +60,26 @@
         </section>
         <section id="portfolio">
             <h2 class="title">Portfolio</h2>
-            <img class="screenportfolio" src="Assets/Img/screenuniversrp.jpg" alt="">
-            <p>UniversRp est le site qui ma permit de passer mon diplôme en octobre 2022, c’est un site qui permet de jouer à des jeux de rôle sans aucun matériel, tout est fourni sur le site.</p>
-            <img class="screenportfolio" src="Assets/Img/screenagc.jpg" alt="">
-            <p>Mon premier portfolio et site sur lequel j’essayais de nouvelle chose et m’entrainais.</p>
-            <img class="screenportfolio" src="Assets/Img/screenhopital.jpg" alt="">
-            <p>Site que j’ai réalisé lors de ma formation en 2022 c’est sur ce site que j’ai réalisé mon premier CRUD.</p>
-            <img class="screenportfolio" src="Assets/Img/screenportfolio" alt="">
-            <p>Le site sur lequel vous êtes actuellement et mon nouveau portfolio !</p>
+            <div id="firstline">
+                <div>
+                    <img class="screenportfolio" src="Assets/Img/screenuniversrp.jpg" alt="">
+                    <p>UniversRp est le site qui ma permit de passer mon diplôme en octobre 2022, c’est un site qui permet de jouer à des jeux de rôle sans aucun matériel, tout est fourni sur le site.</p>
+                </div>
+                <div>
+                    <img class="screenportfolio" src="Assets/Img/screenagc.jpg" alt="">
+                    <p>Mon premier portfolio et site sur lequel j’essayais de nouvelle chose et m’entrainais.</p>
+                </div>
+            </div>
+            <div id="secondline">
+                <div>
+                    <img class="screenportfolio" src="Assets/Img/screenhopital.jpg" alt="">
+                    <p>Site que j’ai réalisé lors de ma formation en 2022 c’est sur ce site que j’ai réalisé mon premier CRUD.</p>
+                </div>
+                <div>
+                    <img class="screenportfolio" src="Assets/Img/screenportfolio" alt="">
+                    <p>Le site sur lequel vous êtes actuellement et mon nouveau portfolio !</p>
+                </div>
+            </div>
         </section>
         <section id="cv">
             <a href="">Telécharger<br>mon cv<br><i id="cvicon" class="fa-solid fa-file-arrow-down iconsize"></i></a>

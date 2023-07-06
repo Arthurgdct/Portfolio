@@ -1,45 +1,56 @@
-*{
+* {
     margin: 0;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
 }
-nav{
 
+nav {
+    background-color: #00045a;
     position: fixed;
     display: flex;
     justify-content: space-between;
-    top: 1%;
-    width: 90%;
-    margin-left: 5%;
+    top: -70px;
+    width: 100%;
+    padding: 0.5rem;
+    transition: top 0.3s;
 }
+
 #logo {
     font-family: 'Marck Script', cursive;
     text-decoration: none;
     color: #fff;
     font-size: 2rem;
+    margin-left: 0.5rem;
 }
+
 #burger {
+    margin-right: 1rem;
     font-size: 2rem;
     color: #fff;
 }
+
 #home {
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
     color: #fff;
-    background-image:linear-gradient(to bottom, rgba(5, 47, 216, 0.5), rgba(0, 0, 138, 0.267)), url(../Img/james-harrison-vpOeXr5wmR4-unsplash.jpg);
+    background-image: linear-gradient(to bottom, rgba(5, 47, 216, 0.5), rgba(0, 0, 138, 0.267)), url(../Img/james-harrison-vpOeXr5wmR4-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#portfoliotitle{
+
+#portfoliotitle {
     margin-top: 5rem;
     font-size: 2rem;
 }
+
 .hometitle {
     margin: 3rem;
     font-size: 2rem;
 }
+
 .title {
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -71,24 +82,29 @@ nav{
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+
 .skill {
     margin-top: 3rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
     color: #fff;
 }
+
 .screenportfolio {
     margin-left: 5%;
     margin-top: 2rem;
     width: 90%;
 }
-#portfolio p{
+
+#portfolio p {
     margin-left: 5%;
     margin-right: 5%;
 }
+
 .iconsize {
     font-size: 2.5rem;
 }
+
 #cv {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -96,27 +112,34 @@ nav{
     color: #fff;
     background-color: #333962;
 }
+
 #cv a {
     font-size: 1.5rem;
     color: #fff;
 }
+
 #cvicon {
     margin-top: 1.5rem;
 }
+
 #contactform {
     text-align: center;
 }
+
 .inputform {
     margin-bottom: 2rem;
 }
-.inputform input,textarea {
+
+.inputform input,
+textarea {
     border: #333962 solid 1px;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     resize: none;
 }
-#formbutton{
+
+#formbutton {
     padding: 1rem;
     font-size: 1.2rem;
     color: #fff;
@@ -124,20 +147,86 @@ nav{
     border: none;
     background-color: #333962;
 }
+
 footer {
     padding: 1rem;
     text-align: center;
     margin-top: 2rem;
     background-color: #333962;
 }
+
 footer p {
     color: #fff;
     margin-bottom: 2rem;
 }
+
 #linkfooter {
     display: flex;
     justify-content: space-around;
 }
+
 #linkfooter a {
     color: #fff;
+}
+
+@media screen and (min-width:900px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    #portfoliotitle,
+    .hometitle {
+        font-size: 5rem;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    #aboutme {
+        display: flex;
+        justify-content: center;
+    }
+
+    #profilpicture {
+        max-width: 35rem;
+        max-height: 35rem;
+    }
+
+    #presentation {
+        width: 40%;
+        margin-top: 2rem;
+    }
+
+    #softskill {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #firstline,
+    #secondline {
+        display: flex;
+        justify-content: center;
+    }
+    #firstline,
+    #secondline div {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    #firstline {
+        margin-top: 5rem;
+    }
+
+    .screenportfolio {
+        width: 80%;
+        margin: 0;
+    }
+    #contactform {
+        margin-left: 15%;
+        width: 70%;
+    }
+    #linkfooter {
+        justify-content: space-evenly;
+    }
 }
