@@ -6,15 +6,20 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-nav {
+#navbar {
     background-color: #00045a;
     position: fixed;
     display: flex;
-    justify-content: space-between;
-    top: -70px;
+    flex-direction: column;
+    top: -40%;
     width: 100%;
     padding: 0.5rem;
     transition: top 0.3s;
+}
+#nav {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #logo {
@@ -29,6 +34,32 @@ nav {
     margin-right: 1rem;
     font-size: 2rem;
     color: #fff;
+}
+
+#xmark {
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.btnsidebar {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    list-style: none;
+    margin-left: 30%;
+}
+
+.btnmenu {
+    color: #fff;
+}
+
+#btnnavbar {
+    display: none;
 }
 
 #home {
@@ -174,6 +205,31 @@ footer p {
         font-size: 1.5rem;
     }
 
+    #burger {
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #btnnavbar {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .btnnav {
+        display: block;
+        color: #fff;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
     #portfoliotitle,
     .hometitle {
         font-size: 5rem;
@@ -208,12 +264,14 @@ footer p {
         display: flex;
         justify-content: center;
     }
+
     #firstline,
     #secondline div {
         text-align: center;
         width: 100%;
         margin-bottom: 5rem;
     }
+
     #firstline {
         margin-top: 5rem;
     }
@@ -222,10 +280,12 @@ footer p {
         width: 80%;
         margin: 0;
     }
+
     #contactform {
         margin-left: 15%;
         width: 70%;
     }
+
     #linkfooter {
         justify-content: space-evenly;
     }

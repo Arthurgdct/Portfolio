@@ -10,15 +10,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Marck+Script&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/72e8ccb00a.js" crossorigin="anonymous"></script>
-    <script src="Assets/Js/script.js"></script>
+    
     <title>Portfolio Agc</title>
 </head>
 
 <body>
     <header>
+
         <nav id="navbar">
-            <a id="logo" href="#">Agc</a>
-            <i id="burger" class="fa-solid fa-bars"></i>
+            <div id="sidebar">
+                <i id="xmark" class="fa-solid fa-xmark"></i>
+                <ul id="btnsidebar">
+                    <li class="btnsidebar"><a class="btnmenu" href="#presentationsection">Présentation</a></li>
+                    <li class="btnsidebar"><a class="btnmenu" href="#portfoliosection">Portfolio</a></li>
+                    <li class="btnsidebar"><a class="btnmenu" href="#contactsection">Contact</a></li>
+                </ul>
+            </div>
+            <div id="nav">
+                <a id="logo" href="#">Agc</a>
+                <ul id="btnnavbar">
+                    <li><a class="btnnav" href="#presentationsection">Présentation</a></li>
+                    <li><a class="btnnav" href="#portfoliosection">Portfolio</a></li>
+                    <li><a class="btnnav" href="#contactsection">Contact</a></li>
+                </ul>
+                <i id="burger" class="fa-solid fa-bars"></i>
+            </div>
         </nav>
     </header>
 
@@ -29,7 +45,7 @@
             <h2 class="hometitle">Développeur<br>Web</h2>
         </section>
         <section>
-            <h2 class="title">Présentation</h2>
+            <h2 id="presentationsection" class="title">Présentation</h2>
             <div id="aboutme">
                 <img id="profilpicture" src="Assets/Img/1661325227976.jpg" alt="Photo de moi">
                 <div id="presentation">
@@ -59,7 +75,7 @@
             </div>
         </section>
         <section id="portfolio">
-            <h2 class="title">Portfolio</h2>
+            <h2 id="portfoliosection" class="title">Portfolio</h2>
             <div id="firstline">
                 <div>
                     <img class="screenportfolio" src="Assets/Img/screenuniversrp.jpg" alt="">
@@ -85,7 +101,7 @@
             <a href="">Telécharger<br>mon cv<br><i id="cvicon" class="fa-solid fa-file-arrow-down iconsize"></i></a>
         </section>
         <section>
-            <h2 class="title">Contact</h2>
+            <h2 id="contactsection" class="title">Contact</h2>
             <form id="contactform" action="" method="post">
                 <div class="inputform">
                     <input type="text" id="name" name="user_name" placeholder="Nom & prénom*">
@@ -110,3 +126,7 @@
             <a href=""><i class="fa-brands fa-github iconsize"></i></a>
         </div>
     </footer>
+    <script src="Assets/Js/script.js"></script>
+</body>
+    
+    
