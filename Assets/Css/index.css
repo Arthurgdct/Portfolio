@@ -9,9 +9,9 @@ body {
 #navbar {
     background-color: #00045a;
     position: fixed;
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    top: -40%;
+    top: -22rem;
     width: 100%;
     padding: 0.5rem;
     transition: top 0.3s;
@@ -42,12 +42,10 @@ body {
     display: flex;
     flex-direction: row-reverse;
     margin-right: 10%;
-    margin-bottom: 10%;
     margin-top: 5%;
 }
 
 .btnsidebar {
-    margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
     list-style: none;
@@ -120,7 +118,9 @@ body {
     font-size: 1.5rem;
     color: #fff;
 }
-
+#portfolio {
+    margin-bottom: 4rem;
+}
 .screenportfolio {
     margin-left: 5%;
     margin-top: 2rem;
@@ -171,12 +171,22 @@ textarea {
 }
 
 #formbutton {
+    cursor: pointer;
     padding: 1rem;
     font-size: 1.2rem;
     color: #fff;
     text-decoration: underline;
     border: none;
     background-color: #333962;
+}
+
+.errors {
+    color: red;
+}
+
+#success {
+    color: forestgreen;
+    margin-bottom: 1rem;
 }
 
 footer {
@@ -210,11 +220,18 @@ footer p {
     }
 
     #navbar {
+        background-color: #00045a;
+        position: fixed;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        top: -5rem;
+        width: 100%;
+        padding: 0.5rem;
+        transition: top 0.3s;
     }
 
     #btnnavbar {
+        list-style-type:none;
         width: 70%;
         display: flex;
         flex-direction: row;
@@ -269,7 +286,6 @@ footer p {
     #secondline div {
         text-align: center;
         width: 100%;
-        margin-bottom: 5rem;
     }
 
     #firstline {

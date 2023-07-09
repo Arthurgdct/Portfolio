@@ -1,3 +1,6 @@
+<?php 
+include 'Controllers/contactCtrl.php'
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -83,13 +86,13 @@
                 </div>
                 <div>
                     <img class="screenportfolio" src="Assets/Img/screenagc.jpg" alt="">
-                    <p>Mon premier portfolio et site sur lequel j’essayais de nouvelle chose et m’entrainais.</p>
+                    <p>Mon premier portfolio et site sur lequel j’essayais de développer des nouvelles fonctionallités et m’entrainais.</p>
                 </div>
             </div>
             <div id="secondline">
                 <div>
                     <img class="screenportfolio" src="Assets/Img/screenhopital.jpg" alt="">
-                    <p>Site que j’ai réalisé lors de ma formation en 2022 c’est sur ce site que j’ai réalisé mon premier CRUD.</p>
+                    <p>Site que j’ai réalisé lors de ma formation en 2022, c’est sur ce site que j’ai réalisé mon premier CRUD.</p>
                 </div>
                 <div>
                     <img class="screenportfolio" src="Assets/Img/screenportfolio" alt="">
@@ -98,32 +101,48 @@
             </div>
         </section>
         <section id="cv">
+            <!--VVV Rajouter le lien du cv VVV -->
             <a href="">Telécharger<br>mon cv<br><i id="cvicon" class="fa-solid fa-file-arrow-down iconsize"></i></a>
         </section>
         <section>
             <h2 id="contactsection" class="title">Contact</h2>
-            <form id="contactform" action="" method="post">
+            <form id="contactform" action="#contactsection" method="POST">
                 <div class="inputform">
-                    <input type="text" id="name" name="user_name" placeholder="Nom & prénom*">
+                    <input type="text" id="lastname" name="lastname" placeholder="Nom*">
+                    <?php if (isset($errors['lastname'])) { ?>
+                    <p class="errors">⚠️<?= $errors['lastname'] ?>⚠️</p>
+                <?php } ?>
                 </div>
                 <div class="inputform">
-                    <input type="email" id="email" name="user_email" placeholder="Adresse email*">
+                    <input type="email" id="email" name="email" placeholder="Adresse email*">
+                    <?php if (isset($errors['email'])) { ?>
+                    <p class="errors">⚠️<?= $errors['email'] ?>⚠️</p>
+                <?php } ?>
                 </div>
                 <div class="inputform">
-                    <input type="text" id="object" name="user_object" placeholder="Objet*">
+                    <input type="text" id="object" name="object" placeholder="Objet*">
+                    <?php if (isset($errors['object'])) { ?>
+                    <p class="errors">⚠️<?= $errors['object'] ?>⚠️</p>
+                <?php } ?>
                 </div>
                 <div class="inputform">
                     <textarea placeholder="Votre message*" name="message" id="message" cols="30" rows="10"></textarea>
+                    <?php if (isset($errors['message'])) { ?>
+                    <p class="errors">⚠️<?= $errors['message'] ?>⚠️</p>
+                <?php } ?>
                 </div>
-                <input id="formbutton" type="button" value="Envoyer mon message">
+                <?php if (isset($success)) { ?>
+                    <p id="success"><?= $success ?></p>
+                <?php } ?>
+                <input id="formbutton" name="validform" type="submit" value="Envoyer mon message">
             </form>
         </section>
     </main>
     <footer>
         <p>© Grand-clement Arthur | 2023</p>
         <div id="linkfooter">
-            <a href=""><i class="fa-brands fa-linkedin iconsize"></i></a>
-            <a href=""><i class="fa-brands fa-github iconsize"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/arthur-gdct/"><i class="fa-brands fa-linkedin iconsize"></i></a>
+            <a target="_blank" href="https://github.com/Arthurgdct"><i class="fa-brands fa-github iconsize"></i></a>
         </div>
     </footer>
     <script src="Assets/Js/script.js"></script>
